@@ -15,7 +15,7 @@
 
 # Device codename
 # Default (if not set): N/A
-SHRP_DEVICE_CODE := <device-codename>
+SHRP_DEVICE_CODE := mojito
 
 # Path of your SHRP device tree
 # Replace <device-brand> with the device brand name
@@ -24,15 +24,15 @@ SHRP_PATH := device/<device-brand>/$(SHRP_DEVICE_CODE)
 
 # Maintainer name
 # Default (if not set): N/A
-SHRP_MAINTAINER := <your-nick-name-here>
+SHRP_MAINTAINER := XenonTheInertG
 
 # Recovery Type (for "About" section only)
 # Default (if not set): N/A
-SHRP_REC_TYPE := <Treble|Normal|SAR>
+SHRP_REC_TYPE := Treble
 
 # Device Type (for "About" section only)
 # Default (if not set): N/A
-SHRP_DEVICE_TYPE := <A_Only|A/B>
+SHRP_DEVICE_TYPE := A/B
 
 # Your device's recovery path, dont use blindly
 # No default
