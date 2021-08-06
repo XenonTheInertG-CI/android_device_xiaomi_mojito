@@ -6,7 +6,7 @@
 # all values within these brackets: "<" ">" showing choice values and need to be 
 # replaced by you with the correct values!
 # Example: if the codename of your device is "gtexslte" <device-codename> becomes:
-# SHRP_DEVICE_CODE := gtexslte
+# SHRP_DEVICE_CODE := mojito
 # (so without any brackets ofc!)
 
 ################### ############################################
@@ -20,7 +20,7 @@ SHRP_DEVICE_CODE := mojito
 # Path of your SHRP device tree
 # Replace <device-brand> with the device brand name
 # (SHRP_DEVICE_CODE will expand to the above variable so check if that is correct)
-SHRP_PATH := device/<device-brand>/$(SHRP_DEVICE_CODE)
+SHRP_PATH := mojito/xiaomi
 
 # Maintainer name
 # Default (if not set): N/A
@@ -44,7 +44,7 @@ SHRP_REC := </dev/block/bootdevice/by-name/recovery>
 
 # Emergency DownLoad mode (0 = no EDL mode, 1 = EDL mode available)
 # Default (if not set): 0
-SHRP_EDL_MODE := <0|1>
+SHRP_EDL_MODE := 0
 
 # internal storage path
 # Default (if not set): /sdcard
