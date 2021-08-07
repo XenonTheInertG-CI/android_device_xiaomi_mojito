@@ -1,18 +1,3 @@
-# NOTE:
-# Don't use '-' or blank spaces in flag values! 
-# These will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC).
-#
-# NOTE-2:
-# all values within these brackets: "<" ">" showing choice values and need to be 
-# replaced by you with the correct values!
-# Example: if the codename of your device is "gtexslte" <device-codename> becomes:
-# SHRP_DEVICE_CODE := mojito
-# (so without any brackets ofc!)
-
-################### ############################################
-# MANDATORY FLAGS # These flags HAVE TO be set/changed by you! #
-################### ############################################
-
 # Device codename
 # Default (if not set): N/A
 SHRP_DEVICE_CODE := mojito
@@ -36,7 +21,7 @@ SHRP_DEVICE_TYPE := A/B
 
 # Your device's recovery path, dont use blindly
 # No default
-SHRP_REC := </dev/block/bootdevice/by-name/recovery>
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
 
 ################### ################################################################################
 # IMPORTANT FLAGS # These are usually good to check - at least if the defaults are what you expect #
@@ -60,7 +45,7 @@ SHRP_OTG := /usb_otg
 
 # Flashlight: (0 = disable, 1 = enable)
 # Default (if not set): 0
-SHRP_FLASH := <0|1>
+SHRP_FLASH := 1
 
 ################## #########################################################################
 # OPTIONAL FLAGS # Stuff which highly depends on your device and / or personal preferences #
